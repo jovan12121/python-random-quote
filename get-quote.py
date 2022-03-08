@@ -4,6 +4,8 @@ def p():
 
     f = open("quotes.txt","a")
     f.write("Get busy living or get busy dying")
+    f.close()
+    f = open("quotes.txt")
     quotes = f.readlines()
     f.close()
     last = len(quotes)
